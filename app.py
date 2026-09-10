@@ -1,26 +1,24 @@
-from flask import Flask, render_template, request, jsonify, send_from_directory
-import requests
 import os
+import requests
+from flask import Flask, jsonify, render_template, request, send_from_directory
 
 app = Flask(__name__, template_folder='.', static_folder='.', static_url_path='')
 
-BOT_TOKEN = "8237856709:AAHFaWtbajVK33ZsY15_9i3zmuqQTH6N-VI"
+# Токен з правильною малою літерою 'w'
+BOT_TOKEN = "8237856709:AAHFawtbajVK33ZsY15_9i3zmuqQTH6N-VI"
 CHAT_ID = "840383602"
 
 @app.route('/')
 def home():
-    # Скануємо папку photo і шукаємо файли, які починаються на 'gallery-'
     photo_dir = 'photo'
     gallery_images = []
     
     if os.path.exists(photo_dir):
         files = os.listdir(photo_dir)
-        # Беремо всі фотографії, що містять 'gallery' у назві та мають розширення зображень
         gallery_images = [
             f for f in files 
             if f.lower().startswith('gallery') and f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp'))
         ]
-        # Сортуємо за назвою, щоб порядок був логічним (gallery-1, gallery-2...)
         gallery_images.sort()
 
     return render_template('index.html', gallery_images=gallery_images)
@@ -50,14 +48,19 @@ def send_order():
     }
 
     try:
-        response = requests.post(url, json=payload)
-        if response.status_code == 200:
+        response = requests.post(url, json=payload, timeout=10)
+        res_data = response.json()
+        
+        if response.status_code == 200 and res_data.get("ok"):
             return jsonify({"status": "success", "message": "Заявку відправлено!"}), 200
         else:
-            return jsonify({"status": "error", "message": response.text}), 500
+            # Друкуємо точну помилку від Telegram у логи Render
+            print(f"❌ Telegram API Error: {response.status_code} - {response.text}")
+            return jsonify({"status": "error", "message": res_data.get("description", "Помилка Telegram API")}), 400
+
     except Exception as e:
+        print(f"❌ Server Error: {str(e)}")
         return jsonify({"status": "error", "message": str(e)}), 500
 
 if __name__ == '__main__':
-    print("🚀 Сервер запущено: http://127.0.0.1:5000")
     app.run(debug=True, port=5000)
