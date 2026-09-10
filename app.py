@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__, template_folder='.', static_folder='.', static_url_path='')
 
-BOT_TOKEN = "8237856709:AAHFawtbajVK33ZsY15_9i3zmuqQTH6N-VI"
+BOT_TOKEN = "8237856709:AAHFaWtbajVK33ZsY15_9i3zmuqQTH6N-VI"
 CHAT_ID = "840383602"
 
 @app.route('/')
