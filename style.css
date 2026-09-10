@@ -1,0 +1,184 @@
+.custom-navbar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.brand-icon {
+    color: #ffc107;
+    font-size: 1.8rem;
+}
+
+.brand-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.brand-accent {
+    color: #a0a0a0;
+    font-size: 0.75rem;
+    display: block;
+}
+
+.brand-logo {
+    height: 38px;
+    width: auto;
+}
+
+.btn-call {
+    background-color: #ffc107;
+    color: #000;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-call:hover {
+    background-color: #e0a800;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.hero-section {
+    min-height: 85vh;
+    color: #ffffff !important;
+    /* Указываем прямой путь к папке photo */
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.85)), 
+                url('photo/hero1.JPG') center/cover no-repeat;
+    position: relative;
+}
+
+.hero-badge {
+    background: rgba (255, 193, 7, 0.15);
+    border: 1px solid rgba(255, 193, 7, 0.4);
+    color: #ffc107;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.hero-title {
+    font-size: calc(1.8rem + 1.5vw);
+    line-height: 1.2;
+}
+
+.hero-subtitle{
+   font-size: 1.15rem;
+   color: #cbd5e1;
+   max-width: 650px; 
+}
+
+.btn-hero-danger {
+    background-color: #dc3545;
+    color: white;
+    padding: 14px 28px;
+    border-radius:  10px;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+    transition: all 0.25s ease;
+}
+
+.btn-hero-danger:hover {
+    background-color: #bb2d3b;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(220, 53, 69, 0.6);
+}
+
+.btn-hero-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid #ffffff;
+    padding:  14px 28 px;
+    border-radius: 10px;
+    transition: all 0.25 ease;
+}
+
+.btn-hero-outline:hover {
+    background: white;
+    color: #0f172a;
+    transform: translateY(-3px);
+}
+
+.services-section {
+    background-color: #f8f9fa;
+    padding-bottom: 60px;
+}
+
+.services-overlap {
+    margin-top: -60px;
+    position: relative;
+    z-index: 10;
+}
+
+.service-card {
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.service-card:hover {
+    transform: rotateY(-8px);
+    box-shadow: 0 12px 30px rdga(0, 0, 0, 0.12) !important;
+}
+
+.service-icon-box1 {
+    width: 65px;
+    height: 65px;
+    background:  center/cover no-repeat;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon-box2 {
+    width: 65px;
+    height: 65px;
+    background:  center/cover no-repeat;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon-box3 {
+    width: 65px;
+    height: 65px;
+    background:  center/cover no-repeat;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* --- Секція Галереї --- */
+.gallery-item {
+    cursor: pointer;
+    height: 250px;
+}
+
+.gallery-img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.08);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
