@@ -316,29 +316,33 @@
                 </div>
                 <div class="modal-body p-4">
                     <form id="orderForm">
-                      <input type="text" id="name" placeholder="Ваше ім'я" required>
-                      <input type="tel" id="phone" placeholder="Номер телефону" required>
-  
-                          <div style="display: flex; gap: 5px;">
-                            <input type="text" id="location" placeholder="Введіть адресу або натисніть 📍">
-                            <button type="button" onclick="getLocation()">📍</button>
-                          </div>
-                          <small id="geoStatus" style="display: block; margin-top: 4px; color: #666;"></small>
-
-                          <button type="submit">Відправити заявку</button>
-                    </form>
-                        <div class="form-group">
-                          <label for="location">Звідки забрати (адреса / траса)</label>
-                          <div style="display: flex; gap: 8px;">
-                            <input type="text" id="location" placeholder="Введіть адресу або натисніть кнопку поруч">
-                            <button type="button" id="geoBtn" onclick="getLocation()" style="padding: 10px; cursor: pointer;">📍</button>
-                          </div>
-                          <small id="geoStatus" style="color: #666; font-size: 12px;"></small>
-                        </div>
-                        <button type="submit" class="btn-danger w-100 fw-bold py-2 fs-5 shadow-sm">
-                            Відправити заявку
-                        </button>
-                    </form>
+                            <!-- Поле: Имя -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-bold">Ваше ім'я</label>
+                                <input type="text" id="name" class="form-control" placeholder="Введіть ваше ім'я" required>
+                            </div>
+                        
+                            <!-- Поле: Телефон -->
+                            <div class="mb-3">
+                                <label for="phone" class="form-label fw-bold">Номер телефону</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="+380..." required>
+                            </div>
+                        
+                            <!-- Поле: Локация + Кнопка геолокации -->
+                            <div class="mb-3">
+                                <label for="location" class="form-label fw-bold">Звідки забрати (адреса / траса)</label>
+                                <div class="d-flex gap-2">
+                                    <input type="text" id="location" class="form-control" placeholder="Введіть адресу або натисніть 📍">
+                                    <button type="button" id="geoBtn" class="btn btn-outline-secondary" onclick="getLocation()" title="Визначити геолокацію">📍</button>
+                                </div>
+                                <small id="geoStatus" class="text-muted d-block mt-1" style="font-size: 12px;"></small>
+                            </div>
+                        
+                            <!-- Кнопка отправки формы -->
+                            <button type="submit" class="btn btn-danger w-100 fw-bold py-2 fs-5 shadow-sm">
+                                Відправити заявку
+                            </button>
+                        </form>
                     <div id="formStatus" class="mt-3 text-center fw-bold"></div>
                 </div>
             </div>
