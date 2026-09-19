@@ -5,7 +5,7 @@ from flask import Flask, jsonify, render_template, request, send_from_directory
 app = Flask(__name__, template_folder='.', static_folder='.', static_url_path='')
 
 # Токен з правильною малою літерою 'w'
-BOT_TOKEN = "8237856709:AAHFawtbajVK33ZsY15_9i3zmuqQTH6N-VI"
+BOT_TOKEN = "8237856709:AAHFaWtbajVK33ZsY15_9i3zmuqQTH6N-VI"
 CHAT_ID = "840383602"
 
 @app.route('/')
