@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Евакуатор Одесa</title>
+<!--подключение css -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top custom-navbar">
+       <div class="container">
+
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img src="photo/11.png" alt="EVAKUATOR 24/7" class="brand-logo">
+            <div class="brand-title">EVAKUATOR <span class="brand-accent">24/7</span></div>
+        </a>
+    </div>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav mx-auto fw-semibold">
+        <li class="nav-item"><a class="nav-link active" href="#hero">Головна</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Послуги</a></li>
+        <li class="nav-item"><a class="nav-link" href="#prices">Ціни</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacts">Контакти</a></li>
+        </ul> 
+
+        <a href="tel:+380000000000" class="btn btn-call fw-bold px-3 py-2 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>+38 (063) 775-22-72</span>
+        </a>
+
+    </div>
+
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Основная страница-->
+
+    <section id="hero" class="hero-section d-flex align-items-center text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-9 col-xl-8">
+
+
+                  <div class="hero-badge mb-3 d-inline-block">
+                    <i class="fa-solid fa-clock text-warning"></i> Подача від 15-20 хвилин • 24/7
+                  </div>  
+
+
+                  <h1 class="hero-title fw-bold mb-3">
+
+                    Терміновий евакуатор
+                    <span class="text-warning">Одеса і область (до 50 км)</span>
+
+
+                  </h1>
+
+                  <p class="hero-subtitle mb-4">
+                    Швидка евакуація авто будь-якої складності, мотоциклів та позашляховиків. Чесні ціни без переплат, працюємо цілодобово.
+                  </p>
+                    
+                  <div class="d-flex flex-wrap gap-3 mb-4">
+                    <a href="tel:+380637752272" class="btn btn-hero-danger btn-lg fw-bold d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>ПОДЗВОНИТИ ЗАРАЗ</span>
+                    </a>
+
+                    <button  class="btn btn-hero-outline btn-lg fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Розрахувати вартість
+                    </button>
+                  </div>
+
+
+                  <div class="hero-features d-flex flex-wrap gap-4 pt-3 border-top dorder-secondary">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-location-dot text-warning fs-5"></i>
+                        <span>Радіус віїзду: <strong>до 50 км</strong></span>     
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-warning fs-5"></i>
+                        <span>Безпечна погрузка</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-money-bill-wave text-warning fs-5"></i>
+                        <span>Ціна від <strong>1000 грн</strong></span>
+                    </div>
+                  </div>
+
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+
+
+            <div class=" row g-4 services-overlap">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card service-card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body text-center d-flex flex-column align-items-center">
+                             <div class="service-icon-box 0
+                             ,,,,,,1 mb-3">
+                                <i class="fa-solid fa-car fs-2 text-warning"></i>
+                             </div>
+                             <h5 class="card-title fw-bold">1.Легкові авто</h5>
+                             <p class="card-text text-muted small">Швидка евакуація седанів, хетчбеків та купе будь-якої маси</p>
+                             <span class="badge bg-light text-dark border mt-auto">От 1000 грн</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card service-card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body text-center d-flex flex-column align-items-center">
+                            <div class="service-icon-box2 mb-3">
+                                <i class="fa-solid fa-motorcycle fs-2 text-warning"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">2. Мотоцикли</h5>
+                            <p class="card-text text-muted small">Спеціальне кріплення для безпечного перевезення двоколісної техніки. </p>
+                            <span class="badge bg-light text-dark border mt-auto">Від 800 грн</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card service-card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body text-center d-flex flex-column align-items-center">
+                            <div class="service-icon-box3 mb-3">
+                                <i class="fa-solid fa-truck-monster fs-2 text-warning"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">3. Позашляховики </h5>
+                            <p class="card-text text-muted small">Навантаження важких позашляховиків, кросоверів.</p>
+                            <span class="badge bg-light text-dark border mt-auto">Від 1200 грн</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="features" class="py-5" bg-white>
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold fs-1">Чому обирають нас</h2>
+                <p class="text-muted">Працюємо надійно, з швидкою подачею та без прихованих платежів</p>
+            </div>
+
+
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="feature-box p-3">
+                        <i class="fa-solid fa-clock-rotate-left display-5 text-warning mb-3"></i>
+                        <h5 class="fw-bold">24/7 цілодобово</h5>
+                        <p class="text-muted small mb-0">Виїжджаємо в будь-який час доби, без вихідних та святових днів.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature-box p-3">
+                        <i class="fa-solid fa-gauge-high display-5 text-warning mb-3"></i>
+                        <h5 class="fw-bold">Подача за 15-20 хв</h5>
+                        <p class="text-muted small mb-0">Машина чергує у різних районах та на виїздах з міста.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature-box p-3">
+                        <i class="fa-solid fa-user-shield display-5 text-warning mb-3"></i>
+                        <h5 class="fw-bold">Досвідчені водії</h5>
+                        <p class="text-muted small mb-0">Машина чергує у різних районах та на виїздах з міста.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="feature-box p-3">
+                        <i class="fa-solid fa-calculator display-5 text-warning mb-3"></i>
+                        <h5 class="fw-bold">Фіксована ціна</h5>
+                        <p class="text-muted small mb-0">Озвучуємо вартість до виїзду, жодних неприємних сюрпризів.</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="prices" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold fs-1">Тарифи на евакуацію</h2>
+                <p class="text-muted">Ціни фіксовані. При замовленні за місто враховується кілометраж.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="table-responsive shadow-sm rounded-4 bg-white p-3">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col" class="py-3 ps-4">Тип транспорту</th>
+                                    <th scope="col" class="py-3">По місту</th>
+                                    <th scope="col" class="py-3">За місто (до 50 км)</th>
+                                    <th scope="col" class="py-3 text-end pe-4">Дія</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ps-4 fw-bold">Легкові (седан, хетчбек)</td>
+                                    <td><span class="badge bg-success fs-6">від 1000 грн</span></td>
+                                    <td>+30 грн / км</td>
+                                    <td class="text-end pe-4">
+                                        <a href="tel:+380637752272" class="btn btn-outline-danger btn-sm fw-bold">Викликати</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-4 fw-bold">Кросовери / Джипи</td>
+                                    <td><span class="badge bg-success fs-6">від 1200 грн</span></td>
+                                    <td>+35 грн / км</td>
+                                    <td class="text-end pe-4">
+                                    <a href="tel:+380637752272" class="btn btn-outline-danger btn-sm fw-bold">Викликати</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-4 fw-bold">Мотоцикли / Квадроцикли</td>
+                                    <td><span class="badge bg-success fs-6">від 800 грн</span></td>
+                                    <td>+25 грн / км</td>
+                                    <td class="text-end pe-4">
+                                    <a href="tel:+380637752272" class="btn btn-outline-danger btn-sm fw-bold">Викликати</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція Галереї -->
+<section id="gallery" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill">Наші роботи</span>
+      <h2 class="fw-bold mt-2">Галерея евакуацій</h2>
+      <p class="text-muted">Приклади нашої роботи на дорогах Одеси та області</p>
+    </div>
+
+    <div class="row g-4">
+      {% if gallery_images %}
+        {% for image in gallery_images %}
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="gallery-item rounded-4 overflow-hidden shadow-sm position-relative">
+            <img src="photo/{{ image }}" class="img-fluid w-100 gallery-img" alt="Евакуація">
+            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+              <span class="text-white fw-bold">Перегляд</span>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="text-center text-muted">
+          <p>Фотографії завантажуються...</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+    <footer id="contacts" class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 pb-4 border-bottom border-secondary">
+
+
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold text-warning mb-3">
+                        <i class="fa-solid fa-truck-pickup"></i> EVAKUATOR 24/7
+                    </h5>
+                    <p class="text-secondary small">
+                       Професійна евакуація автотранспорту у місті та області (до 50 км). Працюємо цілодобово, виїжджаємо негайно після дзвінка. 
+                    </p>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">Контакти</h5>
+                    <ul class="list-unstyled text-secondary small">
+                        <li class="mb-2">
+                            <i class="fa-solid fa-phone text-warning me-2"></i>
+                            <a href="tel:+380637752272" class="text-white text-decoration-none fw-bold">+38 (063) 775-22-72</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fa-solid fa-clock text-warning me-2"></i> Графік: Без вихідних 24/7
+                        </li>
+                        <li class="mb-2">
+                            <i class="fa-solid fa-location-dot text-warning me-2"></i> Зона: Місто + 50 км
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-12 col-md-4 text-md-end">
+                    <h5 class="fw-bold mb-3">Потрібна допомога?</h5>
+                    <a href="tel:+380637752272" class="btn-danger btn-lg fw-bold w-100 w-md-auto ">
+                       <i class="fa-solid fa-phone-volume me-2"></i>Зателефонувати 
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="text-center text-secondary small pt-3">
+                © 2026 EVAKUATOR 24/7. Всі права захищені.
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal  fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title fw-bold" id="orderModalLabel">
+                        <i class="fa-solid fa-truck-pickup me-2"></i>Замовити евакуатор
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <!-- Кнопка крестика (ЗАКРЫВАЕТ окно) -->
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <form id="orderForm">
+                    <!-- Поля формы -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-bold">Ваше ім'я</label>
+                        <input type="text" id="name" class="form-control" placeholder="Введіть ваше ім'я" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label fw-bold">Номер телефону</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="+380..." required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="location" class="form-label fw-bold">Звідки забрати (адреса / траса)</label>
+                        <div class="d-flex gap-2">
+                            <input type="text" id="location" class="form-control" placeholder="Введіть адресу або натисніть 📍">
+                            <button type="button" id="geoBtn" class="btn btn-outline-secondary" onclick="getLocation()" title="Визначити геолокацію">📍</button>
+                        </div>
+                        <small id="geoStatus" class="text-muted d-block mt-1" style="font-size: 12px;"></small>
+                    </div>
+
+                    <!-- Кнопка отправки (БЕЗ data-bs-dismiss) -->
+                    <button type="submit" class="btn btn-danger w-100 fw-bold py-2 fs-5 shadow-sm">
+                        Відправити заявку
+                    </button>
+                </form>
+                    <div id="formStatus" class="mt-3 text-center fw-bold"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
