@@ -325,9 +325,13 @@
                             <input type="tel" id="userPhone" class="form-control" placeholder="+38 (0XX) XXX-XX-XX" required>
                         
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">Звідки забрати (адреса / траса)</label>
-                            <input type="text" id="userLocation" class="form-control" placeholder="Наприклад: вул. Шевченка або 15 км траси" required>
+                        <div class="form-group">
+                          <label for="location">Звідки забрати (адреса / траса)</label>
+                          <div style="display: flex; gap: 8px;">
+                            <input type="text" id="location" placeholder="Введіть адресу або натисніть кнопку поруч">
+                            <button type="button" id="geoBtn" onclick="getLocation()" style="padding: 10px; cursor: pointer;">📍</button>
+                          </div>
+                          <small id="geoStatus" style="color: #666; font-size: 12px;"></small>
                         </div>
                         <button type="submit" class="btn-danger w-100 fw-bold py-2 fs-5 shadow-sm">
                             Відправити заявку
