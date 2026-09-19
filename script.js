@@ -13,6 +13,38 @@ document.addEventListener('DOMContentLoaded', () => {
             const phone = document.getElementById('userPhone').value;
             const location = document.getElementById('userLocation').value;
 
+
+            function getLocation() {
+    const status = document.getElementById('geoStatus');
+    const locationInput = document.getElementById('location');
+
+    if (!navigator.geolocation) {
+        status.textContent = 'Геолокація не підтримується вашим браузером';
+        return;
+    }
+
+    status.textContent = 'Визначення геолокації...';
+
+    navigator.geolocation.getCurrentPosition(
+        (position) => {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            
+            // Формируем ссылку на Google Maps
+            const mapUrl = `https://www.google.com/maps?q=${lat},${lon}`;
+            
+            // Записываем ссылку или координаты в поле ввода
+            locationInput.value = mapUrl;
+            status.textContent = '✅ Геолокацію успішно визначено!';
+        },
+        (error) => {
+            status.textContent = '❌ Не вдалося отримати геолокацію. Введіть адресу вручну.';
+            console.error(error);
+        },
+        { enableHighAccuracy: true, timeout: 10000 }
+    );
+}
+
             try {
                 const response = await fetch('/send-order', {
                     method: 'POST',
